@@ -1,0 +1,60 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    gap:5px;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    flex-direction: column;
+    background-image: url("./bg-drumming.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+h1{
+    text-align: center;
+}
+.container{
+    width:60vw;
+    min-width:100px;
+    background-color: black;
+    height: 70vh;
+    border-radius: 20px;
+    border:0.7rem grey solid;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:5px;
+    padding:5px;
+}
+.tab{
+    background: #16BFFD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CB3066, #16BFFD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CB3066, #16BFFD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    cursor: pointer;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:2vw;
+}
+.tab:active{
+    transform: scale(0.97);
+}
+.active{
+    transform: scale(0.97);
+}
+.ten{
+    grid-column:1/4;
+    
+}
+span{
+    color:white;
+    font-size:3vw;
+}
